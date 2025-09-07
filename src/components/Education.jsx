@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const Education = () => {
   return (
-    <section className="py-8 min-h-screen" id="education">
+    <section className="py-8 " id="education">
       {/* Animated Title */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}

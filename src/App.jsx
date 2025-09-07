@@ -1,3 +1,4 @@
+import AboutMe from "./components/AboutMe"
 import Contact from "./components/Contact"
 import Education from "./components/Education"
 import Footer from "./components/Footer"
@@ -14,9 +15,10 @@ function App() {
         <div className="relative z-10 flex flex-col items-center p-4 space-y-8 container mx-auto">
           <Hero/>
           <Navbar/>
+          <AboutMe/>
+          <Education/>
           <Projects/>
           <Skills/>
-          <Education/>
           <Contact/>
           <Footer/>
         </div>

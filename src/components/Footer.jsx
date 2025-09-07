@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className='mb-8 mt-20'>
         <div className='flex items-center justify-center'>
-            <img src={logo} alt="kushiki" width={200} className='my-20' />
+            <img src={logo} alt="kushiki" width={200} className='my-10' />
         </div>
         <div className='flex items-center justify-center gap-8'>
             {SOCIAL_MEDIA_LINKS.map((link, index) =>(
@@ -15,9 +15,6 @@ const Footer = () => {
                 </a>
             ))}
         </div>
-        <p className='mt-8 text-center text-sm tracking-wide text-gray-400'>
-            &copy;compileTab. All rights reserved.
-        </p>
     </div>
   )
 }

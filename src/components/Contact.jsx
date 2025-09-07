@@ -74,7 +74,7 @@ const Contact = () => {
       
       {/* Title */}
       <motion.h2
-        className='my-8 text-center text-4xl font-semibold tracking-tighter'
+        className='my-8 text-center text-3xl font-semibold tracking-tighter'
         initial={{ opacity: 0, y: -40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}

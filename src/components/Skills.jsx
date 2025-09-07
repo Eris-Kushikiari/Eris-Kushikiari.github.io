@@ -4,8 +4,8 @@ import { motion } from 'framer-motion'
 
 const Skills = () => {
   return (
-    <section className='container mx-auto min-h-screen' id='skills'>
-      <h2 className='mb-12 mt-20 text-center text-4xl font-semibold'>
+    <section className='container mx-auto ' id='skills'>
+      <h2 className='mb-12 mt-20 text-center text-3xl font-semibold'>
         Skills
       </h2>
 
@@ -17,11 +17,10 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}    
             transition={{
               duration: 0.5,
-              delay: index * 0.1,
             }}
             viewport={{ once: true }}              
             whileHover={{ scale: 1.1 }}           
-            className="flex flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 p-6 text-center shadow-md cursor-pointer"
+            className="flex flex-col items-center justify-center rounded-2xl border border-gray-700 bg-gray-900 p-6 text-center shadow-md"
           >
             {/* Icon */}
             <div className="text-6xl mb-4">{skill.icon}</div>

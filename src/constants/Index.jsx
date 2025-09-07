@@ -24,6 +24,7 @@ import { FaJsSquare, FaNodeJs } from "react-icons/fa";
 import { VscVscode } from "react-icons/vsc";
 
 export const NAVIGATION_LINKS = [
+  { label: "About Me", href: "#about" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Education", href: "#education" },
@@ -34,7 +35,7 @@ export const HERO = {
   name: "Eris Peña",
   greet: "Hello there! 👋🏻",
   description:
-    "I’m an enthusiastic web developer with a strong interest in building visually appealing, functional, and user-friendly websites. I enjoy turning ideas into interactive web experiences using web technologies like HTML, CSS, JavaScript, React, and Node.js",
+    "I’m an enthusiastic Full Stack with a strong interest in building visually appealing, functional, and user-friendly websites. I enjoy turning ideas into interactive web experiences using web technologies like HTML, CSS, JavaScript, React, and Node.js",
 };
 
 export const PROJECTS = [
@@ -120,7 +121,7 @@ export const SKILLS = [
   },
 ];
 
-export const EXPERIENCES = [
+{/*export const EXPERIENCES = [
   {
     title: "Lead Frontend Developer",
     company: "Innovative Tech Solutions",
@@ -142,7 +143,13 @@ export const EXPERIENCES = [
     description:
       "In my role as a Junior Web Developer, I assisted in the development and maintenance of various web applications. I gained hands-on experience in utilizing HTML, CSS, and JavaScript to create user-friendly interfaces. I actively participated in team meetings, contributed to project planning, and collaborated with senior developers to implement new features.",
   },
-];
+];*/}
+
+export const ABOUT_ME = {
+  role: "Passionate Developer",
+  description:
+    "I’m a Full Stack Developer passionate about building clean, user-friendly web app. I enjoy solving real-world problems with code and continuously learning new technologies. Currently focused on the PERN stack and exploring Unity for game development.",
+};
 
 export const EDUCATION = [
   {

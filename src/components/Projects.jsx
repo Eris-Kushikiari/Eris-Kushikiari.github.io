@@ -5,14 +5,14 @@ import { motion } from 'framer-motion'
 
 const Projects = () => {
   return (
-    <section className="pt-20 min-h-screen" id="projects">
+    <section className="pt-20 " id="projects">
       {/* Animated Title */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
         viewport={{ once: true }}
-        className="mb-8 text-center font-semibold text-3xl lg:text-4xl"
+        className="mb-8 text-center font-semibold text-3xl lg:text-3xl"
       >
         Projects
       </motion.h2>
@@ -64,15 +64,27 @@ const Projects = () => {
               </div>
 
               {/* Button */}
-              <a
-                href={project.githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-400 transition-colors"
-              >
-                View on GitHub
-                <MdArrowOutward />
-              </a>
+              <div className='gap-2 flex'>
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-400 transition-colors"
+                >
+                  View on GitHub
+                  <MdArrowOutward />
+                </a>
+                
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-500 px-4 py-2 rounded-lg hover:bg-blue-400 transition-colors"
+                >
+                  Demo
+                  <MdArrowOutward />
+                </a>
+              </div>
             </div>
           </motion.div>
         ))}
