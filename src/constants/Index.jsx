@@ -14,7 +14,7 @@ import {
 import projectImage1 from "../assets/projectImage1.png";
 import projectImage2 from "../assets/projectImage2.png";
 import projectImage3 from "../assets/projectImage3.png";
-//import projectImage4 from "../assets/project4.jpeg";
+import projectImage4 from "../assets/projectImage4.png";
 //import projectImage5 from "../assets/project5.jpeg";
 //import projectImage6 from "../assets/project6.jpeg";
 
@@ -25,9 +25,9 @@ import { VscVscode } from "react-icons/vsc";
 
 export const NAVIGATION_LINKS = [
   { label: "About Me", href: "#about" },
+  { label: "Education", href: "#education" },
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
-  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -46,6 +46,7 @@ export const PROJECTS = [
       "A capstone project system that helps manufacturers manage orders, track inventory, and schedule production so everything runs smoothly and on time.",
     image: projectImage1,
     githubLink: "https://github.com/Eris-Kushikiari/CORE2-JJM-MANUFACTURING",
+    demoLink: "https://core-2-jjm-manufacturing-rgjr.vercel.app",
     techStack: ["React", "TailwindCSS", "Node.js", "Javascript", "MongoDB", "Express.js"],
   },
   {
@@ -64,7 +65,18 @@ export const PROJECTS = [
       "A mobile endless runner game i created Shot Jump as a twist on the classic Flappy Bird concept and added a shooting mechanic where when you tap it will shoot and jump creating the illusion of shot recoil, also maintaining the minimalistic design and fast-paced challenge that makes these game fun.",
     image: projectImage3,
     githubLink: "https://github.com/Eris-Kushikiari/Shot-Jump",
+    demoLink: "https://erishally.itch.io/shot-jump",
     techStack: ["Unity", "C#", "Blender"],
+  },
+  {
+    id: 3,
+    name: "JJM Landing Page",
+    description:
+      "The JJM Landing Page is a simple one-page website I built to highlight the brand and its services. It’s clean, easy to navigate, and designed to quickly give visitors an overview of what JJM is all about.",
+    image: projectImage4,
+    githubLink: "https://github.com/Eris-Kushikiari/CORE2-JJM-MANUFACTURING-LANDINGPAGE",
+    demoLink: "https://core-2-jjm-manufacturing-landingpag.vercel.app",
+    techStack: ["React", "TailwindCSS"],
   },
 ];
 
