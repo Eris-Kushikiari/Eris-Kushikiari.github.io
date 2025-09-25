@@ -35,7 +35,7 @@ export const HERO = {
   name: "Eris Peña",
   greet: "Hello there! 👋🏻",
   description:
-    "I’m an enthusiastic Full Stack with a strong interest in building visually appealing, functional, and user-friendly websites. I enjoy turning ideas into interactive web experiences using web technologies like HTML, CSS, JavaScript, React, and Node.js",
+    "I’m Eris Hally S. Peña — a developer focused on the MERN stack and exploring Unity game development.",
 };
 
 export const PROJECTS = [
@@ -160,7 +160,7 @@ export const SKILLS = [
 export const ABOUT_ME = {
   role: "Passionate Developer",
   description:
-    "I’m a Full Stack Developer passionate about building clean, user-friendly web app. I enjoy solving real-world problems with code and continuously learning new technologies. Currently focused on the PERN stack and exploring Unity for game development.",
+    "I’m Eris Hally S. Peña from Caloocan City. I graduated from Bestlink College of the Philippines with a Bachelor of Science in Information Technology (BSIT). I’m passionate about building clean, user-friendly web applications and enjoy solving real-world problems with code while continuously learning new technologies. I’m currently focused on the MERN stack and exploring Unity for game development.",
 };
 
 export const EDUCATION = [
