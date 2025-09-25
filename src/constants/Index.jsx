@@ -69,7 +69,7 @@ export const PROJECTS = [
     techStack: ["Unity", "C#", "Blender"],
   },
   {
-    id: 3,
+    id: 4,
     name: "JJM Landing Page",
     description:
       "The JJM Landing Page is a simple one-page website I built to highlight the brand and its services. It’s clean, easy to navigate, and designed to quickly give visitors an overview of what JJM is all about.",
@@ -160,7 +160,11 @@ export const SKILLS = [
 export const ABOUT_ME = {
   role: "Passionate Developer",
   description:
-    "I’m Eris Hally S. Peña from Caloocan City. I graduated from Bestlink College of the Philippines with a Bachelor of Science in Information Technology (BSIT). I’m passionate about building clean, user-friendly web applications and enjoy solving real-world problems with code while continuously learning new technologies. I’m currently focused on the MERN stack and exploring Unity for game development.",
+    `I’m Eris Hally S. Peña from Caloocan City. I graduated from Bestlink College of the Philippines with a Bachelor of Science in Information Technology (BSIT). 
+    
+    I’m passionate about building clean, user-friendly web applications and enjoy solving real-world problems with code while continuously learning new technologies. 
+    
+    I’m currently focused on the MERN stack and exploring Unity for game development.`,
 };
 
 export const EDUCATION = [

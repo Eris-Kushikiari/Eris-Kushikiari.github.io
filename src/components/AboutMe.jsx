@@ -1,6 +1,7 @@
 import React from 'react'
 import { ABOUT_ME } from '../constants'
-import profile from '../assets/profile.jpg'
+import frontImage from '../assets/profile.jpg'
+import backImage from '../assets/profile2.jpg'
 import { motion } from 'framer-motion'
 
 const AboutMe = () => {
@@ -25,8 +26,36 @@ const AboutMe = () => {
                 }}
                 viewport={{ once: true }}
                 className='w-full md:w-1/2 lg:p-8'>
-                <div className='flex justify-center'>
-                    <motion.img initial={{opacity: 0}} animate={{opacity: 1}} transition={{ duration: 1}} src={profile} width={550} height={550} alt='Eris' className='rounded-3xl' />
+                <div className="flex justify-center">
+                    <div className="group [perspective:1000px]"> {/* perspective for 3D flip */}
+                        <div
+                        className="
+                            relative h-[300px] w-[300px] sm:h-[400px] sm:w-[400px] 
+                            transition-transform duration-700 
+                            [transform-style:preserve-3d] 
+                            group-hover:[transform:rotateY(180deg)]
+                        "
+                        >
+                        {/* Front */}
+                        <img
+                            src={frontImage}
+                            alt="Front"
+                            className="
+                            absolute inset-0 h-full w-full rounded-3xl object-cover 
+                            [backface-visibility:hidden]
+                            "
+                        />
+                        {/* Back */}
+                        <img
+                            src={backImage}
+                            alt="Back"
+                            className="
+                            absolute inset-0 h-full w-full rounded-3xl object-cover 
+                            [transform:rotateY(180deg)] [backface-visibility:hidden]
+                            "
+                        />
+                        </div>
+                    </div>
                 </div>
             </motion.div>
             <motion.div initial={{ opacity: 0, y: 50 }}
@@ -37,12 +66,11 @@ const AboutMe = () => {
                 }}
                 viewport={{ once: true }}
                 className='w-full md:w-1/2'>
-                <h2 className=' p-2 text-2xl font-bold md:text-5xl lg:text-[3rem]'>
-                    {ABOUT_ME.role}
-                </h2>
-                <p className='mb-8 p-2 text-xl'>
-                    {ABOUT_ME.description}
-                </p>
+                <div className="mb-8 p-4 text-lg leading-relaxed space-y-4">
+                    {ABOUT_ME.description.split('\n').map((para, i) => (
+                        para.trim() && <p key={i}>{para.trim()}</p>
+                    ))}
+                </div>
             </motion.div>
         </div>
         
