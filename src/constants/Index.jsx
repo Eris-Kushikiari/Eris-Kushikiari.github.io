@@ -15,7 +15,7 @@ import projectImage1 from "../assets/projectImage1.png";
 import projectImage2 from "../assets/projectImage2.png";
 import projectImage3 from "../assets/projectImage3.png";
 import projectImage4 from "../assets/projectImage4.png";
-//import projectImage5 from "../assets/project5.jpeg";
+import projectImage5 from "../assets/projectimage5.png";
 //import projectImage6 from "../assets/project6.jpeg";
 
 import { RiReactjsLine } from "react-icons/ri";
@@ -77,6 +77,16 @@ export const PROJECTS = [
     githubLink: "https://github.com/Eris-Kushikiari/CORE2-JJM-MANUFACTURING-LANDINGPAGE",
     demoLink: "https://core-2-jjm-manufacturing-landingpag.vercel.app",
     techStack: ["React", "TailwindCSS"],
+  },
+  {
+  id: 5,
+  name: "Chase Me",
+  description:
+    "Chase Me is a game where you need to collect 10 anchor to win, avoid getting hit by the enemy.",
+  image: projectImage5,
+  githubLink: "https://github.com/Eris-Kushikiari/Chase-Me",
+  demoLink: "https://erishally.itch.io/chase-me",
+  techStack: ["Unity", "C#", "Blender"],
   },
 ];
 
