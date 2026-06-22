@@ -35,7 +35,7 @@ export const HERO = {
   name: "Eris Peña",
   greet: "Hello there! 👋🏻",
   description:
-    "I’m Eris Hally S. Peña — a developer focused on the MERN stack and exploring Unity game development.",
+    "I’m Eris Hally S. Peña — a developer focused on the Next.js and exploring Unity game development.",
 };
 
 export const PROJECTS = [
@@ -174,7 +174,7 @@ export const ABOUT_ME = {
     
     I’m passionate about building clean, user-friendly web applications and enjoy solving real-world problems with code while continuously learning new technologies. 
     
-    I’m currently focused on the MERN stack and exploring Unity for game development.`,
+    I’m currently focused on Next.js and exploring Unity for game development.`,
 };
 
 export const EDUCATION = [
